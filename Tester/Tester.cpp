@@ -3,10 +3,13 @@
 bool Tester::startTest(int index, bool compile) {
     if (compile) {
         Builder::compile(true);
+
     }
     std::string output = Builder::readOutput(TestList::tests[index].input);
 
-    if (output != TestList::tests[index].output) {
+    trimLineBreaks(output);
+
+    if (output != TestList::tests[index].output || compile) {
         std::cout << "Test index: " << index << std::endl;
         std::cout << TestList::tests[index].input << std::endl;
         std::cout << "Res: " << output << std::endl;
@@ -27,5 +30,11 @@ void Tester::startAllTests() {
     }
     if (counterOfBadTests == 0) {
         std::cout << "All tests passed!" << std::endl;
+    }
+}
+
+void Tester::trimLineBreaks(std::string& str) {
+    while (!str.empty() && (str.back() == '\n' || str.back() == '\r')) {
+        str.pop_back();
     }
 }

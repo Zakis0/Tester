@@ -5,6 +5,6 @@
 
 const int MAX_OUTPUT_SIZE = 128;
 const std::string WRONG_TESTS_DELIMITER = "_______________";
-const std::string SOURCE_FILE_PATH = "/home/zakis/Code/sportsProgramming/YandexAlgorithms5_0/1/B. Football commentator";
+const std::string PATH_TO_MAIN = "";
 
 #endif //TESTER_CONFIG_H
