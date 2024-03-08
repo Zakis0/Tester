@@ -1,0 +1,16 @@
+# ninja log v5
+572	683	1709864481228533156	Tester	1faee03d8217f764
+1	572	1709864481120528634	CMakeFiles/Tester.dir/Tester/Tester.cpp.o	be9ff570db082077
+0	29	1709864706929924211	build.ninja	7b687ad1103bf05f
+2	618	1709864391684772835	CMakeFiles/Tester.dir/main.cpp.o	d9286c145ec0b8ec
+4	610	1709864391676772498	CMakeFiles/Tester.dir/Builder/Builder.cpp.o	cce32c3219473823
+3	886	1709854589774785690	CMakeFiles/Tester.dir/Test/Test.cpp.o	d5a4645795e3ca88
+1	622	1709864426986258086	CMakeFiles/Tester.dir/TestList/TestList.cpp.o	62c16d3de4c56606
+3	752	1709864391816778396	CMakeFiles/Tester.dir/Constants/Constants.cpp.o	e53ab122e986bbc1
+3	733	1709864710306063919	CMakeFiles/Tester.dir/Test/Test.cpp.o	a06dc7fe8a4e2488
+2	769	1709864710342065409	CMakeFiles/Tester.dir/main.cpp.o	a520082c99e3a2b7
+4	800	1709864710370066568	CMakeFiles/Tester.dir/Builder/Builder.cpp.o	1f95ed80995542c9
+5	809	1709864710382067064	CMakeFiles/Tester.dir/TestList/TestList.cpp.o	2c83ded3f2907b1b
+3	818	1709864710390067395	CMakeFiles/Tester.dir/Constants/Constants.cpp.o	c1e9decbedb351e9
+3	885	1709864710454070043	CMakeFiles/Tester.dir/Tester/Tester.cpp.o	a1221a2eea49db38
+885	1032	1709864710602076168	Tester	1faee03d8217f764
