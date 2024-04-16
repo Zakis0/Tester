@@ -5,7 +5,7 @@
 
 #include "../Constants/Constants.h"
 #include "../Builder/Builder.h"
-#include "../TestList/TestList.h"
+#include "../TestList/TestInfo.h"
 
 struct Tester {
     static bool startTest(int index, bool compile = false);

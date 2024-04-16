@@ -1,2 +1,2 @@
 # Tester
-Test programs output by input
+Test programs expectedOutput by input

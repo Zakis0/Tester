@@ -5,6 +5,5 @@
 
 const int MAX_OUTPUT_SIZE = 128;
 const std::string WRONG_TESTS_DELIMITER = "_______________";
-const std::string PATH_TO_MAIN = "";
 
 #endif //TESTER_CONFIG_H

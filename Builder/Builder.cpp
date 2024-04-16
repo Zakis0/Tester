@@ -1,7 +1,7 @@
 #include "Builder.h"
 
 int Builder::compile(bool debug) {
-    const std::string buildCommand = Constants::buildCommand;
+    const std::string buildCommand = Constants::compilerCommand + " \"" + TestInfo::PATH_TO_MAIN + "\" " + Constants::flags + " " + Constants::exeName;
     int compilationResult = system(buildCommand.c_str());
     if (debug) {
         std::cout << "Compilation ";

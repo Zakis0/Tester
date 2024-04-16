@@ -5,15 +5,15 @@ bool Tester::startTest(int index, bool compile) {
         Builder::compile(true);
 
     }
-    std::string output = Builder::readOutput(TestList::tests[index].input);
+    std::string output = Builder::readOutput(TestInfo::tests[index].input);
 
     trimLineBreaks(output);
 
-    if (output != TestList::tests[index].output || compile) {
+    if (output != TestInfo::tests[index].expectedOutput || compile) {
         std::cout << "Test index: " << index << std::endl;
-        std::cout << TestList::tests[index].input << std::endl;
-        std::cout << "Res: " << output << std::endl;
-        std::cout << "Correct: " << TestList::tests[index].output << std::endl;
+        std::cout << "Input:" << std::endl << TestInfo::tests[index].input << std::endl << std::endl;
+        std::cout << "Res:" << std::endl << output << std::endl << std::endl;
+        std::cout << "Correct:" << std::endl << TestInfo::tests[index].expectedOutput << std::endl;
         return false;
     }
     return true;
@@ -22,7 +22,7 @@ bool Tester::startTest(int index, bool compile) {
 void Tester::startAllTests() {
     Builder::compile(true);
     int counterOfBadTests = 0;
-    for (int i = 0; i < TestList::tests.size(); ++i) {
+    for (int i = 0; i < TestInfo::tests.size(); ++i) {
         if (!startTest(i)) {
             ++counterOfBadTests;
             std::cout << WRONG_TESTS_DELIMITER << std::endl;

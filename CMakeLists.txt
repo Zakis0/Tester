@@ -4,7 +4,7 @@ project(Tester)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Tester main.cpp
-        TestList/TestList.h
+        TestList/TestInfo.h
         Test/Test.cpp
         Test/Test.h
         Constants/Constants.cpp
@@ -14,4 +14,5 @@ add_executable(Tester main.cpp
         Builder/Builder.cpp
         Builder/Builder.h
         Config.h
-        TestList/TestList.cpp)
+        TestList/TestInfo.cpp
+)

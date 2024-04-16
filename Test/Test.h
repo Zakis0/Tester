@@ -5,8 +5,8 @@
 
 struct Test {
     std::string input;
-    std::string output;
-    Test(std::string input, std::string output);
+    std::string expectedOutput;
+    Test(std::string input, std::string expectedOutput);
 };
 
 #endif //TESTING_TEST_H

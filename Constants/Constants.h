@@ -3,6 +3,7 @@
 
 #include <string>
 #include "../Config.h"
+#include "../TestList/TestInfo.h"
 
 struct Constants {
     const static std::string compilerCommand;
@@ -10,7 +11,6 @@ struct Constants {
     const static std::string exeName;
 
     const static std::string executionCommand;
-    const static std::string buildCommand;
 };
 
 #endif //TESTING_CONSTANTS_H
