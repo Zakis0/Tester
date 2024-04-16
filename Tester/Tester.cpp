@@ -11,9 +11,9 @@ bool Tester::startTest(int index, bool compile) {
 
     if (output != TestInfo::tests[index].expectedOutput || compile) {
         std::cout << "Test index: " << index << std::endl;
-        std::cout << "Input:" << std::endl << TestInfo::tests[index].input << std::endl << std::endl;
-        std::cout << "Res:" << std::endl << output << std::endl << std::endl;
-        std::cout << "Correct:" << std::endl << TestInfo::tests[index].expectedOutput << std::endl;
+        std::cout << "Program input:" << std::endl << TestInfo::tests[index].input << std::endl << std::endl;
+        std::cout << "Program output:" << std::endl << output << std::endl << std::endl;
+        std::cout << "Expected output:" << std::endl << TestInfo::tests[index].expectedOutput << std::endl;
         return false;
     }
     return true;
